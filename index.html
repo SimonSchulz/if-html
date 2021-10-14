@@ -5,9 +5,182 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Шульга Семён</title>
+    <style>
+        img {
+            padding: 10px;
+        }
+
+        h1 {
+            color: indigo;
+            text-align: center;
+        }
+
+        body {
+            background-color: khaki;
+            font-size: 20px;
+        }
+
+        mark {
+            background: gold;
+        }
+
+        th {
+            width: 400px;
+        }
+
+        table {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <h1>Моя первая страница</h1>
-<p>Более подробно <a href='./about/index.html'>об авторе</a></p>>
+<p><img align="left" src="./about/images/1.jpg" width="380" alt="картинка">
+<mark>Мне 29 лет. Живу в городе Новополоцке. Работаю на ОАО "Нафтан" завод Полимир, слесарем.</mark>
+<br>
+Мои контакты:
+<br>
+<a href="mailto:zenkov241091@gmail.com" target="_blank">zenkov241091@gmail.com</a>
+<br>
+<a href="https://github.com/SimonSchulz/" target="_blank">github.com/SimonSchulz/</a>
+<br>
+<a href="tel:+375333610660">+375333610660</a>
+<br>
+Более подробно <a href='./about/index.html'>об авторе</a>
+</p>
+<hr>
+<p>Вот уже несколько лет увлекаюсь программированием. В университете и самостоятельно изучал такие языки как
+    <ins>Java</ins>
+    <ins>C++</ins>
+    <ins>C#</ins>
+    ,искал курсы при компаниях с последующим трудоустройством, однако не нашел, поэтому со временем начал интересоваться
+    <b>front-end</b></p>
+<p>Люблю постоянно развиваться, учить что-то новое&#129317. Предыдущие годы изучал иностранные языки&#129322. Имею <b>международный
+    сертификат по немецкому языку уровня А2</b>, а также
+    <b>сертификаты из языкового центра ПГУ, по немецкому и английскому уровня B1 &#129300</b></p>
+<hr>
+<ol>
+    <li>Знакомство с Web
+        <ul>
+            <li>Краткая история web и что такое интернет.</li>
+            <li>Как устроен браузер и как он получает страницы по сети.</li>
+            <li>Что такое Git?</li>
+            <li>Создание первого репозитория.</li>
+            <li>О файле .gitignore.</li>
+        </ul>
+    </li>
+    <li>HTML-верстка - первые шаги
+        <ul>
+            <li>Настройка рабочей среды.</li>
+            <li>Краткая история HTML</li>
+            <li>Какие бывают теги и что такое атрибут.</li>
+            <li>Теги для работы с текстом.</li>
+            <li>Создание собственной страницы.</li>
+        </ul>
+    </li>
+    <li>Погружение в HTML-разметку
+        <ul>
+            <li>Мета-теги.</li>
+            <li>Мнемоники.</li>
+            <li>Тег для работы с изоюражением.</li>
+            <li>Теги для работы со списками.</li>
+            <li>Теги для работы с таблицами.</li>
+            <li>Теги для работы с формами.</li>
+            <li>Div-блоки.</li>
+        </ul>
+    </li>
+</ol>
+<hr>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Tag</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>&lt;table&gt;</td>
+        <td>Defines a table</td>
+    </tr>
+    <tr>
+        <td>&lt;tr&gt;</td>
+        <td>Defines a row in a table</td>
+    </tr>
+    <tr>
+        <td>&lt;th&gt;</td>
+        <td rowspan="2">Defines a "header cell"/"cell" in a table</td>
+    </tr>
+    <tr>
+        <td>&lt;td&gt;</td>
+    </tr>
+    <tr>
+        <td colspan="2">Rarely used</td>
+    </tr>
+    <tr>
+        <td>&lt;caption&gt;</td>
+        <td>Defines a table caption</td>
+    </tr>
+    <tr>
+        <td>&lt;thead&gt;</td>
+        <td>Groups the header content in a table</td>
+    </tr>
+    <tr>
+        <td>&lt;tbody&gt;</td>
+        <td>Groups the body content in a table</td>
+    </tr>
+    <tr>
+        <td>&lt;tfoot&gt;</td>
+        <td>Groups the footer content in a table</td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+<form>
+    <fieldset>
+        <legend>My first form</legend>
+        <label for="text1">Name</label>
+        <div><input type="text" placeholder="Name" value="name" name="text" id = "text1"></div>
+        <label for="email">Email</label>
+        <div><input type="email" name="email" id="email" required></div>
+        <label for="pass">Password</label>
+        <div><input type="password" name="password" id="pass"></div>
+        <br>
+        <label for="text2">Your programming level</label>
+        <div><input type="range" name="range"   id="text2"></div>
+        <p>What does HTML stand for?</p>
+        <div>
+            <input type="checkbox" name="check" id="text3">
+            <label for="text3">Hyperlink and text markup language</label>></div>
+        <div>
+            <input type="checkbox" name="check" id="text4">
+            <label for="text4">Home Tool Markup </label></div>
+        <div>
+            <input type="checkbox" name="check" id="text5">
+            <label for="text5">Hyper Text Markup </label>></div>
+        <p>What does HTTP stand for?</p>
+        <div>
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio1">Hyper Text Translate Protocol</label></div>
+        <div>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio2">Hyper Text Transfer Protocol</label>></div>
+        <div>
+            <input type="radio" name="radio" id="radio3">
+            <label for="radio3">Hyper Text Transmission Protocol</label>></div>
+        <br>
+        <label for="comment">Comment</label>
+        <div><textarea name="comment" cols="40" rows="3" id="comment"></textarea></div>
+        <br>
+        <label for="select">What does HTML stand for?</label><br>
+        <select name="select" id="select">
+            <option>Hyperlink and text markup language</option>
+            <option>Home Tool Markup Language</option>
+            <option>Hyper Text Markup Language</option>
+        </select>
+        <br><br>
+        <button>Send</button>
+    </fieldset>
+</form>
 </body>
 </html>
