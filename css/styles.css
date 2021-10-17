@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 900px;
+    background: rgba(18, 18, 18, 0.25);
+}
+
+.offer {
+    height: 569px;
+}
+
+.offer .container {
+    width: 1232px;
+    margin: 0 auto;
+}
+
+hr {
+    width: 100px;
+    height: 4px;
+    margin: 0 auto;
+    background: #F5BD41;
+}
+
+h2 {
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #383838;
+    padding: 120px 0px 20px 0px;
+}
+
+.container .flex {
+    height: 378px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 296px;
+    height: 176px;
+}
+
+.text_block {
+    width: 296px;
+    vertical-align: bottom;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #383838;
+}
+
+.hotels {
+    height: 828px;
+    background: #EAF0F9;
+}
