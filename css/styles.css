@@ -1,47 +1,44 @@
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/Roboto-Italic.ttf);
+    src: url(../fonts/Roboto/Roboto-Italic.ttf);
     font-weight: normal;
     font-style: italic;
 }
+
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/Roboto-BoldItalic.ttf);
+    src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-.header {
-    height: 900px;
-    background: rgba(18, 18, 18, 0.25);
-}
-
 .offer {
     height: 569px;
 }
 
 .container {
-    width: 1232px;
-    margin: 0 auto;
+    margin: 0 104px 0 104px;
 }
+
 hr {
     width: 100px;
     height: 4px;
@@ -51,16 +48,16 @@ hr {
 
 h2 {
     text-align: center;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
     color: #383838;
-    padding: 120px 0px 20px 0px;
+    padding: 120px 0 20px 0;
 }
 
 .container .flex {
-    height: 378px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,42 +75,48 @@ h2 {
 .text_block {
     width: 296px;
     vertical-align: bottom;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
     color: #383838;
 }
+
 .hotels {
     height: 828px;
     background: #EAF0F9;
 }
-.flex_hotels{
+
+.flex_hotels {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.item_hotels{
+
+.item_hotels {
     width: 296px;
     height: 435px;
 }
-.text_block2_1{
-    font-family: Roboto;
+
+.text_block2_1 {
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
     color: #3077C6;
 }
+
 .text_block2_2 {
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
     color: #BFBFBF;
 }
-.item_hotels{
+
+.item_hotels {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
