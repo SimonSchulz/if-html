@@ -7,23 +7,47 @@
 }
 
 .container {
-    padding: 0 120px;
+    width: 100%;
+    max-width: 1264px;
+    padding: 0 16px;
+    margin: 0 auto;
     font-family: Roboto, sans-serif;
 }
 
 .header {
-    height: 900px;
     background-image: url("../images/castel.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav,.header_nav_img{
+    display: flex;
+    align-items: center;
+}
+.header_nav_link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 24px;
+}
+.header_nav_link:hover{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #F5BD41;
 }
 
+.header_nav_img >a{
+    padding-left: 24px;
+}
 h1 {
-    position: absolute;
-    margin-top: 100px;
-    left: 104px;
-    top: 293px;
+    margin-top: 200px;
     font-style: normal;
     font-size: 50px;
     line-height: 59px;
@@ -38,7 +62,40 @@ hr {
     margin: 20px auto;
     background: #F5BD41;
 }
-
+.header_form{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 1fr;
+    background: #ffffff;
+    border-radius: 8px;
+    box-sizing: content-box;
+}
+.header_form>input{
+    padding: 22px 24px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    border: none;
+    border-radius: 8px;
+}
+.form_destinations:hover,.calender:hover, .people_count:hover{
+    margin: -3px 0;
+    border: #F5BD41 solid 3px;
+}
+.form_btn{
+    background: #3077C6;
+    color: #ffff;
+    font-size: 24px;
+    border-radius: 8px;
+}
+.header_store_links{
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+}
+.header_store_links >a{
+    margin-right: 16px;
+}
 h2 {
     text-align: center;
     font-weight: 500;
@@ -66,16 +123,12 @@ h2 {
     width: 25%;
 }
 
-.offer_icon {
-    height: 100px;
-    width: 100px;
-}
-
 .offer_item_text {
     margin-top: 48px;
     font-size: 24px;
     line-height: 28px;
     color: #383838;
+    text-align: center;
 }
 
 .hotels {
@@ -85,18 +138,13 @@ h2 {
 .hotels_main, .destinations_main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 100px;
 }
 
 .hotels_item {
     width: 25%;
 }
-
-/*.hotels_item_img {*/
-/*    width: 296px;*/
-/*    height: 350px;*/
-/*}*/
 
 .hotel_item_name,.destinations_item_name{
     margin-top: 24px;
@@ -256,4 +304,30 @@ h2 {
     line-height: 16px;
     text-align: left;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 950px) {
+    h2{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    hr {
+        display: none;
+    }
+    .container {
+        font-size: 15px;
+        padding: 0 16px;
+    }
+
+    .offer_main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer_item{
+        margin: 32px;
+    }
+.offer_item_text{
+    margin-top: 16px;
+}
 }
