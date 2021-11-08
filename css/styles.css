@@ -24,10 +24,12 @@
     height: 100vh;
     min-height: 900px;
 }
-.header_logo{
+
+.header_logo {
     height: 40px;
     width: 205px;
 }
+
 .header_nav {
     display: flex;
     justify-content: space-between;
@@ -354,6 +356,108 @@ h2 {
     padding-bottom: 150px;
 }
 
+.reviews {
+    min-height: 1160px;
+    padding: 120px 0;
+}
+
+.main_reviews_block {
+    margin-top: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.reviews_block {
+    min-height: 760px;
+    width: 33.3%;
+    background: #EAF0F9;
+}
+
+.reviews_block:nth-child(2) {
+    margin: 0 16px;
+}
+
+.reviews_block > div {
+    position: relative;
+}
+
+.reviews_block > div > img {
+    width: 100%;
+}
+
+.reviews_block > div > p {
+    width: 100%;
+    padding: 12px 24px;
+    position: absolute;
+    bottom: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: rgba(56, 56, 56, 0.7);
+}
+.reviews_content{
+    padding: 24px;
+}
+.reviews_hotel {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+.reviews_hotel > p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #3077C6;
+
+}
+.reviews_hotel > div {
+    padding: 4px 11px;
+    background: #10367C;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+.reviews_place{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.country{
+    font-size: 18px;
+    color: #3077C6;
+}
+.place_reviews{
+    font-size: 14px;
+    color: #BFBFBF;
+}
+.reviews_account{
+    margin-top: 26px;
+    display: flex;
+}
+.account_user{
+    margin-left: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.reviews_user{
+    font-size: 18px;
+    color: #383838;
+}
+.reviews_country{
+    font-size: 18px;
+    color: #BFBFBF;
+
+}
+.reviews_text{
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #383838;
+}
 .footer {
     background: #10367C;;
     padding: 120px 0;
@@ -364,10 +468,12 @@ h2 {
     justify-content: space-between;
     align-items: flex-start;
 }
-.footer_logo{
+
+.footer_logo {
     display: none;
 
 }
+
 .footer_text_block {
     width: 33.33%;
     margin-right: 16px;
@@ -434,23 +540,28 @@ h2 {
     .offer_item_text {
         margin-top: 16px;
     }
-    .footer{
+
+    .footer {
         padding: 40px 0;
     }
-    .footer_logo{
+
+    .footer_logo {
         display: block;
         margin: 0 auto;
         height: 40px;
         width: 205px;
     }
-.main_foot_block{
-    margin-top: 40px;
-    text-align: center;
-}
-    .footer_text_block > li:not(:first-child){
+
+    .main_foot_block {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .footer_text_block > li:not(:first-child) {
         display: none;
     }
-    .sign{
+
+    .sign {
         text-align: center;
         margin: 40px auto;
     }
