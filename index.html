@@ -176,7 +176,17 @@
         <path d="M104.761 13.4821C104.641 13.8936 104.379 14.2496 104.022 14.4878C103.666 14.7259 103.236 14.8311 102.81 14.7848C102.513 14.7926 102.219 14.7358 101.946 14.6183C101.674 14.5008 101.43 14.3253 101.232 14.1042C101.034 13.8831 100.887 13.6215 100.8 13.3377C100.713 13.0538 100.689 12.7545 100.73 12.4606C100.691 12.1657 100.715 11.8657 100.801 11.5811C100.888 11.2964 101.034 11.0336 101.231 10.8105C101.428 10.5875 101.671 10.4093 101.942 10.2881C102.214 10.1669 102.509 10.1054 102.806 10.108C104.059 10.108 104.815 10.964 104.815 12.378V12.6881H101.635V12.7379C101.621 12.9032 101.642 13.0695 101.696 13.2263C101.75 13.383 101.837 13.5267 101.95 13.6482C102.062 13.7696 102.2 13.8662 102.352 13.9316C102.504 13.997 102.669 14.0298 102.834 14.0279C103.047 14.0535 103.262 14.0152 103.453 13.918C103.644 13.8208 103.801 13.669 103.906 13.482L104.761 13.4821ZM101.635 12.0309H103.91C103.921 11.8797 103.9 11.7279 103.849 11.5852C103.798 11.4425 103.718 11.312 103.614 11.2022C103.509 11.0923 103.383 11.0055 103.243 10.9473C103.103 10.8891 102.953 10.8609 102.801 10.8643C102.648 10.8624 102.495 10.8913 102.353 10.9492C102.21 11.0072 102.081 11.093 101.972 11.2017C101.864 11.3105 101.778 11.4398 101.72 11.5822C101.662 11.7246 101.633 11.8772 101.635 12.0309H101.635Z"
               fill="white"/>
     </symbol>
-
+    <symbol id="user" viewBox="0 0 86 86">
+        <circle cx="43" cy="43" r="43" fill="white"/>
+        <path d="M46.6518 55.7484C46.6518 53.6923 47.1633 51.7181 48.1248 49.9587C46.7643 49.1915 45.7619 48.6903 45.3425 48.4857C45.2095 48.4243 45.1379 48.2913 45.1379 48.1481V40.0671C46.1506 39.392 46.8257 38.2361 46.8257 36.9268V28.5491C46.8257 24.3858 43.4501 21 39.2766 21H38.3764H37.4763C33.313 21 29.9272 24.3756 29.9272 28.5491V36.9268C29.9272 38.2361 30.6023 39.392 31.615 40.0671V48.1481C31.615 48.2913 31.5331 48.4243 31.4104 48.4857C30.2545 49.0483 24.6592 51.8715 19.473 56.1371C18.5319 56.9043 18 58.0602 18 59.2774V65.016H38.3662H50.9787C50.7025 64.7909 50.4468 64.5454 50.1911 64.2897C47.91 62.0086 46.6518 58.9705 46.6518 55.7484Z"
+              fill="#3077C6"/>
+        <path d="M58.7324 46.4807C53.6179 46.4807 49.4648 50.6337 49.4648 55.7482C49.4648 60.8628 53.6179 65.0158 58.7324 65.0158C63.847 65.0158 68 60.8628 68 55.7482C68 50.6337 63.8572 46.4807 58.7324 46.4807ZM64.1539 57.0985H60.0827V61.1697H57.3822V57.0985H53.311V54.398H57.3822V50.3268H60.0827V54.398H64.1539V57.0985Z"
+              fill="#3077C6"/>
+    </symbol>
+    <symbol id="close" viewBox="0 0 26 26">
+        <path d="M26 1.4857L24.5144 0L13 11.5143L1.4857 0L0 1.4857L11.5143 13L0 24.5144L1.4857 26L13 14.4857L24.5144 26L26 24.5144L14.4857 13L26 1.4857Z"
+              fill="#BFBFBF"/>
+    </symbol>
     <symbol id="ukraine_flag" viewBox="0 0 640 480">
         <g fill-rule="evenodd" stroke-width="1pt">
             <path fill="#ffd500" d="M0 0h640v480H0z"/>
@@ -206,67 +216,69 @@
     </symbol>
 </svg>
 <section class="header">
-    <div class="container">
-        <header class="header_nav">
-            <div class="logo">
-                <svg class="header_logo">
-                    <use href="#logo">
-                    </use>
-                </svg>
-            </div>
-            <div class="nav">
-                <nav>
-                    <a class="header_nav_link" href="">Stays</a>
-                    <a class="header_nav_link" href="">Attractions</a>
-                </nav>
-                <nav class="header_nav_img">
-                    <a href="">
-                        <svg width="30px" height="30px">
-                            <use href="#night_theme"></use>
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg width="40px" height="40px">
-                            <use href="#account_circle"></use>
-                        </svg>
-                    </a>
-                </nav>
-            </div>
-        </header>
-        <h1>Discover stays <br>to live, work or just relax</h1>
-        <form class="header_form">
-            <div class="header_form_destination">
-                <input class="form_destinations" name="destination" type="text"
-                       id="form_destinations">
-                <label for="form_destinations">Your destination or hotel name</label>
-            </div>
-            <div class="header_form_check">
-                <input type="text" class="check_in" name="check_in" id="check_in">
-                <label for="check_in">check-in</label>
-                <input type="text" class="check_out" name="check_out" id="check_out">
-                <label for="check_out">check-out</label>
-            </div>
-            <div class="header_form_people">
-                <input type="text" name="people" id="people">
-                <label for="people">Adults - children - room</label>
-            </div>
-            <div class="header_form_btn">
-                <button class="form_btn">Search</button>
-            </div>
+    <div class="dark">
+        <div class="container">
+            <header class="header_nav">
+                <div class="logo">
+                    <svg class="header_logo">
+                        <use href="#logo">
+                        </use>
+                    </svg>
+                </div>
+                <div class="nav">
+                    <nav>
+                        <a class="header_nav_link" href="">Stays</a>
+                        <a class="header_nav_link" href="">Attractions</a>
+                    </nav>
+                    <nav class="header_nav_img">
+                        <a href="">
+                            <svg width="30px" height="30px">
+                                <use href="#night_theme"></use>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="40px" height="40px">
+                                <use href="#account_circle"></use>
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
+            </header>
+            <h1>Discover stays <br>to live, work or just relax</h1>
+            <form class="header_form">
+                <div class="header_form_destination">
+                    <input class="form_destinations" name="destination" type="text"
+                           id="form_destinations">
+                    <label for="form_destinations">Your destination or hotel name</label>
+                </div>
+                <div class="header_form_check">
+                    <input type="text" class="check_in" name="check_in" id="check_in">
+                    <label for="check_in">check-in</label>
+                    <input type="text" class="check_out" name="check_out" id="check_out">
+                    <label for="check_out">check-out</label>
+                </div>
+                <div class="header_form_people">
+                    <input type="text" name="people" id="people">
+                    <label for="people">Adults - children - room</label>
+                </div>
+                <div class="header_form_btn">
+                    <button class="form_btn">Search</button>
+                </div>
 
-        </form>
-        <div class="header_store_links">
-            <a href="#">
-                <!--              <svg width="143" height="48">-->
-                <!--                  <use href="#google"></use>-->
-                <!--              </svg>-->
-                <img src="./images/google-play-badge.png" alt="google_play">
-            </a>
-            <a href="#">
-                <svg width="120" height="40">
-                    <use href="#app_store"></use>
-                </svg>
-            </a>
+            </form>
+            <div class="header_store_links">
+                <a href="#">
+                    <!--              <svg width="143" height="48">-->
+                    <!--                  <use href="#google"></use>-->
+                    <!--              </svg>-->
+                    <img src="./images/google-play-badge.png" alt="google_play">
+                </a>
+                <a href="#">
+                    <svg width="120" height="40">
+                        <use href="#app_store"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -340,6 +352,9 @@
                 <div class="hotel_item_place">
                     Berlin, Germany
                 </div>
+                <button class="rnd_btn_hotel">
+                    <img src="images/Polygon%201.png" alt="">
+                </button>
             </div>
         </div>
     </div>
@@ -378,17 +393,25 @@
                 </div>
             </div>
         </div>
-        <button class="rnd_btn"><img src="images/Polygon%202.png" alt=""></button>
+        <button class="rnd_btn_dest"><img src="images/Polygon%202.png" alt=""></button>
     </div>
 </section>
 <section class="container">
     <div class="btm-section">
-        <div class="img_round"><img src="./images/Group.png" alt="group"></div>
+        <div class="img_round">
+            <svg>
+                <use href="#user"></use>
+            </svg>
+        </div>
         <div class="btm_block">
             <div class="btm_text">Sign up and get 20% off your first booking</div>
             <button class="btm_btn">sign up</button>
         </div>
-        <div class="vector"><img src="/images/Vector.png" alt="vector"></div>
+        <button class="btn_close">
+            <svg width="26" height="26">
+                <use href="#close"></use>
+            </svg>
+        </button>
     </div>
 </section>
 <section class="reviews">

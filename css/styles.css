@@ -15,16 +15,22 @@
 }
 
 .header {
+    position: relative;
     background-image: url("../images/castel.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 50px;
-    padding-bottom: 120px;
     height: 100vh;
     min-height: 900px;
 }
-
+.dark{
+    padding-top: 50px;
+    padding-bottom: 120px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+background: rgba(18, 18, 18, 0.25);
+}
 .header_logo {
     height: 40px;
     width: 205px;
@@ -241,6 +247,7 @@ h2:hover::after {
 
 .hotels_main, .destinations_main {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 100px;
@@ -268,6 +275,17 @@ h2:hover::after {
     font-weight: normal;
     font-size: 24px;
     color: #BFBFBF;
+}
+.rnd_btn_hotel {
+    width: 40px;
+    height: 40px;
+    background: #eaf0f9;
+    border-radius: 50%;
+    position: absolute;
+    right: -1%;
+    top: 30%;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .item_dest{
     margin: 0 8px;
@@ -299,7 +317,7 @@ h2:hover::after {
     color: #ffffff;
 }
 
-.rnd_btn {
+.rnd_btn_dest {
     margin-top: 60px;
     width: 40px;
     height: 40px;
@@ -312,6 +330,7 @@ h2:hover::after {
 }
 
 .btm-section {
+    position: relative;
     margin-top: 120px;
     height: 200px;
     width: 100%;
@@ -361,13 +380,11 @@ h2:hover::after {
     line-height: 21px;
     text-align: center;
 }
-
-.vector {
-    display: flex;
-    flex-grow: 6;
-    justify-content: flex-end;
-    margin-right: 10px;
-    padding-bottom: 150px;
+.btn_close{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: none;
 }
 
 .reviews {
@@ -642,13 +659,16 @@ h2:hover::after {
         font-style: normal;
         font-weight: 700;
     }
-
+    .offer, .destinations, .hotels{
+        padding: 40px 0;
+    }
     .container {
         font-size: 15px;
         padding: 0 16px;
     }
 
     .offer_main {
+        margin-top: 40px;
         flex-wrap: wrap;
         align-items: center;
     }
@@ -661,6 +681,19 @@ h2:hover::after {
         margin-top: 16px;
     }
 
+    .btn-group{
+        background: none;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-group>button{
+        font-size: 20px;
+        padding: 12px 35px;
+    }
+    .destinations_main{
+        margin-top: 40px;
+    }
     .hotels_item:last-child {
         display: none;
     }
@@ -778,7 +811,10 @@ h2:hover::after {
     .hotels_item:nth-child(3) {
         display: none;
     }
-
+    .btn-group>button{
+        font-size: 18px;
+        padding: 12px 25px;
+    }
     .item_dest:nth-child(3){
         display: none;
     }
