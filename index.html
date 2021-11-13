@@ -38,6 +38,10 @@
         <path d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM20 6C23.32 6 26 8.68 26 12C26 15.32 23.32 18 20 18C16.68 18 14 15.32 14 12C14 8.68 16.68 6 20 6ZM20 34.4C15 34.4 10.58 31.84 8 27.96C8.06 23.98 16 21.8 20 21.8C23.98 21.8 31.94 23.98 32 27.96C29.42 31.84 25 34.4 20 34.4Z"
               fill="white"/>
     </symbol>
+    <symbol id="loupe" viewBox="0 0 16 16">
+        <path d="M11.4351 10.0629H10.7124L10.4563 9.81589C11.3528 8.77301 11.8925 7.4191 11.8925 5.94625C11.8925 2.66209 9.23042 0 5.94625 0C2.66209 0 0 2.66209 0 5.94625C0 9.23042 2.66209 11.8925 5.94625 11.8925C7.4191 11.8925 8.77301 11.3528 9.81589 10.4563L10.0629 10.7124V11.4351L14.6369 16L16 14.6369L11.4351 10.0629ZM5.94625 10.0629C3.66838 10.0629 1.82962 8.22413 1.82962 5.94625C1.82962 3.66838 3.66838 1.82962 5.94625 1.82962C8.22413 1.82962 10.0629 3.66838 10.0629 5.94625C10.0629 8.22413 8.22413 10.0629 5.94625 10.0629Z"
+              fill="#BFBFBF"/>
+    </symbol>
     <symbol id="google" viewBox="0 0 143 48">
         <g filter="url(#filter0_d_1:42)">
             <path d="M134 39.9999H9C6.25 39.9999 4 37.75 4 35V4.99999C4 2.25 6.25 0 9 0H134C136.75 0 139 2.25 139 4.99999V35C139 37.75 136.75 39.9999 134 39.9999Z"
@@ -226,7 +230,7 @@
                     </svg>
                 </div>
                 <div class="nav">
-                    <nav>
+                    <nav class="header_link_block">
                         <a class="header_nav_link" href="">Stays</a>
                         <a class="header_nav_link" href="">Attractions</a>
                     </nav>
@@ -242,26 +246,39 @@
                             </svg>
                         </a>
                     </nav>
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#">Stays</a></li>
+                            <li><a class="menu__item" href="#">Attractions</a></li>
+                        </ul>
+                    </div>
                 </div>
             </header>
             <h1>Discover stays <br>to live, work or just relax</h1>
             <form class="header_form">
-                <div class="header_form_destination">
+                <div class="header_form_destination col-md-4 col-sm-12 col-xs-12">
+                    <svg class="loupe" width="16" height="16">
+                        <use href="#loupe"></use>
+                    </svg>
                     <input class="form_destinations" name="destination" type="text"
                            id="form_destinations">
                     <label for="form_destinations">Your destination or hotel name</label>
                 </div>
-                <div class="header_form_check">
+                <div class="header_form_check col-md-3 col-sm-12 col-xs-12">
                     <input type="text" class="check_in" name="check_in" id="check_in">
                     <label for="check_in">check-in</label>
                     <input type="text" class="check_out" name="check_out" id="check_out">
                     <label for="check_out">check-out</label>
                 </div>
-                <div class="header_form_people">
+                <div class="header_form_people col-md-3 col-sm-12 col-xs-12">
                     <input type="text" name="people" id="people">
                     <label for="people">Adults - children - room</label>
                 </div>
-                <div class="header_form_btn">
+                <div class="header_form_btn col-md-2 col-sm-12 col-xs-12">
                     <button class="form_btn">Search</button>
                 </div>
 
