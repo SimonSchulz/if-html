@@ -23,14 +23,16 @@
     height: 100vh;
     min-height: 900px;
 }
-.dark{
+
+.dark {
     padding-top: 50px;
     padding-bottom: 120px;
     position: absolute;
     height: 100%;
     width: 100%;
-background: rgba(18, 18, 18, 0.25);
+    background: rgba(18, 18, 18, 0.25);
 }
+
 .header_logo {
     height: 40px;
     width: 205px;
@@ -45,10 +47,12 @@ background: rgba(18, 18, 18, 0.25);
     display: flex;
     align-items: center;
 }
-.hamburger-menu{
+
+.hamburger-menu {
     padding-left: 24px;
     align-self: center;
 }
+
 #menu__toggle {
     opacity: 0;
 }
@@ -69,10 +73,12 @@ background: rgba(18, 18, 18, 0.25);
     height: 3px;
     background-color: #FFFFFF;
 }
+
 .menu__btn > span::before {
     content: '';
     top: -8px;
 }
+
 .menu__btn > span::after {
     content: '';
     top: 8px;
@@ -103,19 +109,23 @@ background: rgba(18, 18, 18, 0.25);
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
 }
+
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     right: 0;
     top: 12%;
 }
+
 .header_nav_link {
     font-style: normal;
     font-weight: normal;
@@ -162,9 +172,11 @@ h1 {
     border-radius: 8px;
     font-size: 21px;
 }
-.loupe{
+
+.loupe {
     display: none;
 }
+
 .header_form_destination {
     position: relative;
 }
@@ -202,7 +214,7 @@ h1 {
     border-radius: 8px;
 }
 
-.header_form_check > label:first-of-type,.header_form_check > label:nth-of-type(2) {
+.header_form_check > label:first-of-type, .header_form_check > label:nth-of-type(2) {
     position: absolute;
     left: 5%;
     top: 33%;
@@ -344,6 +356,7 @@ h2:hover::after {
     font-size: 24px;
     color: #BFBFBF;
 }
+
 .rnd_btn_hotel {
     width: 40px;
     height: 40px;
@@ -355,12 +368,15 @@ h2:hover::after {
     border: none;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.item_dest{
+
+.item_dest {
     margin: 0 8px;
 }
-.item_dest>img{
+
+.item_dest > img {
     width: 100%;
 }
+
 .btn-group {
     display: inline-block;
     margin-top: 100px;
@@ -408,6 +424,10 @@ h2:hover::after {
     background-color: #eaf0f9;
 }
 
+.sign_up_logo {
+    display: none;
+}
+
 .img_round {
     margin: 40px;
     display: flex;
@@ -433,7 +453,17 @@ h2:hover::after {
     text-align: center;
     color: #383838;
 }
+.install_link{
+    display: none;
+    margin-left: 16px;
 
+}
+.install_link>a{
+    font-weight: 700;
+    font-size: 24px;
+    color: #3077C6;
+    text-decoration: none;
+}
 .btm_btn {
     margin-top: 20px;
     height: 48px;
@@ -448,7 +478,8 @@ h2:hover::after {
     line-height: 21px;
     text-align: center;
 }
-.btn_close{
+
+.btn_close {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -456,7 +487,6 @@ h2:hover::after {
 }
 
 .reviews {
-    min-height: 1160px;
     padding: 120px 0;
 }
 
@@ -722,35 +752,47 @@ h2:hover::after {
         width: calc(100% / 12 * 12);
     }
 
-    .dark{
+    .dark {
         padding-top: 20px;
         padding-bottom: 40px;
     }
-    h1{
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
         margin-top: 150px;
         font-size: 42px;
     }
-    .header_form{
+
+    .header_form {
         flex-wrap: wrap;
         background-color: #F5BD41;
         padding: 8px;
     }
 
-    .header_form>div{
-      padding: 8px;
+    .header_form > div {
+        padding: 8px;
     }
-    .header_link_block{
+
+    .header_link_block {
         display: none;
     }
-    .menu__btn{
+
+    .menu__btn {
         display: flex;
     }
-    .header_store_links{
+
+    .header_store_links {
         margin-top: 40px;
     }
-    .check_in,.check_out{
+
+    .check_in, .check_out {
         margin: 0 4px;
     }
+
     .header_form_destination input:focus + label,
     .header_form_people input:focus + label,
     .check_in:focus + label,
@@ -766,9 +808,11 @@ h2:hover::after {
         font-style: normal;
         font-weight: 700;
     }
-    .offer, .destinations, .hotels{
+
+    .offer, .destinations, .hotels {
         padding: 40px 0;
     }
+
     .container {
         font-size: 15px;
         padding: 0 16px;
@@ -788,34 +832,85 @@ h2:hover::after {
         margin-top: 16px;
     }
 
-    .btn-group{
+    .btn-group {
         background: none;
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
     }
-    .btn-group>button{
+
+    .btn-group > button {
         font-size: 20px;
         padding: 12px 35px;
     }
-    .destinations_main{
+
+    .destinations_main {
         margin-top: 40px;
     }
+
     .hotels_item:last-child {
         display: none;
     }
-    .destinations_item_name{
+
+    .destinations_item_name {
         font-size: 18px;
     }
-    .hotel_item_name,.hotel_item_place {
+
+    .hotel_item_name, .hotel_item_place {
         font-size: 18px;
     }
-    .item_dest:last-child{
+
+    .item_dest:last-child {
         display: none;
     }
-    .reviews_block:last-child{
+
+    .reviews {
+        margin-top: 120px;
+        padding-bottom: 0;
+        background: #EAF0F9;
+    }
+
+    .reviews_block:last-child {
         display: none;
     }
+
+    .sign_up {
+        order: 3;
+    }
+
+    .btm-section {
+        margin: 0;
+        background: #FFFFFF;
+        justify-content: space-between;
+    }
+    .install_link{
+        display: flex;
+    }
+    .img_round {
+        display: none;
+    }
+
+    .btn_close {
+        margin: 0 18px;
+        position: static;
+        order: -1;
+        background: #FFFFFF;
+    }
+
+    .sign_up_logo {
+        width: 58px;
+        height: 58px;
+        display: flex;
+        background: #3077C6;
+        border-radius: 4px;
+        padding: 0 2px;
+        margin-right: 16px ;
+    }
+
+    .btm_btn {
+        display: none;
+    }
+
     .footer {
         padding: 40px 0;
     }
@@ -890,41 +985,51 @@ h2:hover::after {
     .col-xs-12 {
         width: calc(100% / 12 * 12);
     }
-    .header{
+
+    .header {
         min-height: 600px;
     }
-    .dark{
+
+    .dark {
         padding-top: 12px;
         padding-bottom: 40px;
     }
-    h1{
+
+    h1 {
         margin-top: 50px;
         font-size: 36px;
     }
-    br{
+
+    br {
         display: none;
     }
-    .header_form{
+
+    .header_form {
         margin-top: 30px;
         flex-wrap: wrap;
         background-color: #F5BD41;
     }
-    .header_form>div{
+
+    .header_form > div {
         padding: 0;
         margin: 8px;
     }
-    .loupe{
+
+    .loupe {
         display: inline;
         position: absolute;
         top: 40%;
         left: 24px;
     }
-    .header_form_destination>label{
+
+    .header_form_destination > label {
         left: 50px;
     }
-    .header_store_links{
+
+    .header_store_links {
         margin-top: 40px;
     }
+
     h2 {
         font-size: 28px;
         font-style: normal;
@@ -952,16 +1057,20 @@ h2:hover::after {
     .hotels_item:nth-child(3) {
         display: none;
     }
-    .btn-group>button{
+
+    .btn-group > button {
         font-size: 18px;
         padding: 12px 25px;
     }
-    .item_dest:nth-child(3){
+
+    .item_dest:nth-child(3) {
         display: none;
     }
-    .reviews_block:nth-child(2){
+
+    .reviews_block:nth-child(2) {
         display: none;
     }
+
     .footer {
         padding: 40px 0;
     }
