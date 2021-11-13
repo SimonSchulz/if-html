@@ -897,8 +897,7 @@ h2:hover::after {
         background: #FFFFFF;
     }
 
-    .sign_up_logo {
-        width: 58px;
+    .sign_up_logo {gi
         height: 58px;
         display: flex;
         background: #3077C6;
