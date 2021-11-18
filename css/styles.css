@@ -803,16 +803,10 @@ h2:hover::after {
   .sign_up .btm-section .install_link {
     display: flex;
   }
-  .sign_up .img_round {
+  .sign_up .btm-section .img_round {
     display: none;
   }
-  .sign_up .btn_close {
-    margin: 0 18px;
-    position: static;
-    order: -1;
-    background: #FFFFFF;
-  }
-  .sign_up .sign_up_logo {
+  .sign_up .btm-section .sign_up_logo {
     height: 58px;
     display: flex;
     background: #3077C6;
@@ -820,8 +814,14 @@ h2:hover::after {
     padding: 0 2px;
     margin-right: 16px;
   }
-  .sign_up .btm_btn {
+  .sign_up .btm-section .btm_btn {
     display: none;
+  }
+  .sign_up .btm-section .btn_close {
+    margin: 0 18px;
+    position: static;
+    order: -1;
+    background: #FFFFFF;
   }
 
   .footer {
