@@ -41,6 +41,14 @@
   display: flex;
   align-items: center;
 }
+.header .dark .header_nav_img .night_theme {
+  width: 30px;
+  height: 30px;
+}
+.header .dark .header_nav_img .account_circle {
+  width: 40px;
+  height: 40px;
+}
 .header .dark .hamburger-menu {
   display: none;
   padding-left: 24px;
@@ -357,6 +365,9 @@ h2:hover::after {
 }
 .btn-group button:nth-child(3) {
   padding: 17px 30px;
+}
+.btn-group button:nth-child(4) {
+  display: none;
 }
 .btn-group button:hover {
   background-color: #0018ea;
@@ -724,11 +735,14 @@ h2:hover::after {
   .header .dark .header_store_links {
     margin-top: 40px;
   }
-  .header .dark .check_in, .header .dark .check_out {
-    margin: 0 4px;
+  .header .dark .check_in {
+    margin-right: 3px;
+  }
+  .header .dark .check_out {
+    margin-left: 3px;
   }
   .header .dark .header_form_destination input:focus + label, .header .dark .header_form_people input:focus + label, .header .dark .check_in:focus + label, .header .dark .check_out:focus + label {
-    transform: translateY(-15px);
+    transform: translateY(-12px);
     font-size: 12px;
     padding: 0;
     color: black;
@@ -896,6 +910,7 @@ h2:hover::after {
 
   .header {
     min-height: 533px;
+    height: 100%;
   }
   .header .dark {
     padding-top: 4px;
@@ -904,73 +919,194 @@ h2:hover::after {
   .header .dark .header_logo {
     width: 121px;
   }
-  .header .dark #night_theme {
-    width: 16px !important;
+  .header .dark .header_nav_img a {
+    padding-left: 16px;
+  }
+  .header .dark .header_nav_img .night_theme {
+    width: 16px;
     height: 16px;
   }
-  .header .dark h1 {
-    margin-top: 40px;
-    font-size: 36px;
+  .header .dark .header_nav_img .account_circle {
+    width: 24px;
+    height: 24px;
   }
-
-  .header_form {
+  .header .dark .hamburger-menu {
+    padding-left: 16px;
+  }
+  .header .dark h1 {
+    margin-top: 38px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .header .dark .header_form {
     margin-top: 30px;
+    padding: 4px;
     flex-wrap: wrap;
     background-color: #F5BD41;
+    border-radius: 0;
   }
-  .header_form div {
-    padding: 0;
-    margin: 8px;
+  .header .dark .header_form div {
+    padding: 4px;
   }
-
-  .loupe {
+  .header .dark .header_form .header_form_destination .loupe {
     display: inline;
     position: absolute;
     top: 40%;
     left: 24px;
   }
-
-  .header_form_destination label {
+  .header .dark .header_form input {
+    font-size: 15px;
+    padding: 15px 40px;
+    border-radius: 4px;
+  }
+  .header .dark .header_form label {
+    font-size: 15px;
     left: 50px;
   }
-
-  .header_store_links {
-    margin-top: 40px;
+  .header .dark .header_form button {
+    font-size: 19px;
+    padding: 15px 40px;
+    border-radius: 4px;
+  }
+  .header .dark .header_store_links {
+    margin-top: 32px;
   }
 
-  h2 {
+  .offer {
+    padding: 18px 0;
+  }
+  .offer h2 {
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
   }
-
-  .container {
+  .offer .container {
     font-size: 15px;
     padding: 0 16px;
   }
-
-  .offer_main {
+  .offer .offer_main {
+    margin-top: 0;
+    margin-bottom: 20px;
     flex-direction: column;
     align-items: center;
   }
-  .offer_main .offer_item {
-    margin-top: 32px;
+  .offer .offer_main .offer_item {
+    margin-top: 24px;
   }
-  .offer_main .offer_item .offer_item_text {
-    margin-top: 16px;
+  .offer .offer_main .offer_item .offer_item_img {
+    display: flex;
+    justify-content: center;
+  }
+  .offer .offer_main .offer_item .offer_icon {
+    width: 70%;
+  }
+  .offer .offer_main .offer_item .offer_item_text {
+    margin-top: 13px;
+    font-size: 15px;
   }
 
-  .hotels_item:nth-child(3) {
+  .hotels {
+    padding-top: 32px;
+  }
+  .hotels .hotels_main {
+    margin-top: 25px;
+  }
+  .hotels .hotels_main .hotel_item_name {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+  .hotels .hotels_main .hotel_item_place {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+  .hotels .hotels_main .hotels_item:nth-child(3) {
     display: none;
   }
 
-  .btn-group button {
-    font-size: 18px;
-    padding: 12px 25px;
+  .destinations {
+    padding-top: 34px;
+  }
+  .destinations .btn-group {
+    margin-top: 23px;
+  }
+  .destinations .btn-group button {
+    font-size: 19px;
+    padding: 5px 15px;
+  }
+  .destinations .btn-group button:nth-child(3) {
+    display: none;
+  }
+  .destinations .btn-group button:nth-child(4) {
+    display: block;
+  }
+  .destinations .destinations_main {
+    margin-top: 26px;
+  }
+  .destinations .destinations_main .destinations_item_name {
+    margin-top: 7px;
+    font-size: 12px;
+  }
+  .destinations .rnd_btn_dest {
+    display: none;
   }
 
   .item_dest:nth-child(3), .reviews_block:nth-child(2) {
     display: none;
+  }
+
+  .reviews {
+    margin-top: 0;
+    padding: 30px 0;
+  }
+  .reviews .main_reviews_block {
+    margin-top: 30px;
+  }
+  .reviews .main_reviews_block .reviews_block {
+    margin: 0;
+    min-height: 600px;
+  }
+  .reviews .main_reviews_block .reviews_block .reviews_image_block p {
+    display: none;
+  }
+  .reviews .main_reviews_block .reviews_block .reviews_content {
+    padding: 0;
+  }
+  .reviews .main_reviews_block .reviews_block .reviews_content .reviews_account {
+    margin-top: 0;
+  }
+  .reviews .main_reviews_block .reviews_block .reviews_content p, .reviews .main_reviews_block .reviews_block .reviews_content .reviews_text {
+    font-size: 15px;
+  }
+  .reviews .main_reviews_block .reviews_block .reviews_content .reviews_text {
+    margin-top: 19px;
+    line-height: 18px;
+  }
+
+  .sign_up {
+    padding: 24px 16px;
+  }
+  .sign_up .btm-section {
+    padding: 0;
+  }
+  .sign_up .btm-section .btn_close {
+    margin: 0;
+  }
+  .sign_up .btm-section .btn_close svg {
+    width: 16px;
+  }
+  .sign_up .btm-section .sign_up_logo {
+    margin: 0 16px;
+    width: 58px;
+  }
+  .sign_up .btm-section .install_link a {
+    font-size: 14px;
+  }
+  .sign_up .btm-section .btm_block {
+    padding: 0;
+  }
+  .sign_up .btm-section .btm_block .btm_text {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .footer {
@@ -979,19 +1115,27 @@ h2:hover::after {
   .footer .footer_logo {
     display: block;
     margin: 0 auto;
-    height: 40px;
+    height: 19px;
     width: 205px;
   }
   .footer .main_foot_block {
     margin-top: 40px;
     text-align: center;
   }
+  .footer .main_foot_block .footer_text_block {
+    padding: 0;
+  }
+  .footer .main_foot_block .footer_text_block li a {
+    font-size: 15px;
+    line-height: 14px;
+  }
   .footer .main_foot_block .footer_text_block li:not(:first-child) {
     display: none;
   }
-  .footer .main_foot_block .sign {
+  .footer .sign {
+    font-size: 12px;
     text-align: center;
-    margin: 40px auto;
+    margin: 6px auto;
   }
 }
 

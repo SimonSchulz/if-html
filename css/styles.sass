@@ -41,6 +41,14 @@
       display: flex
       align-items: center
 
+    .header_nav_img
+      .night_theme
+          width: 30px
+          height: 30px
+      .account_circle
+        width: 40px
+        height: 40px
+
     .hamburger-menu
       display: none
       padding-left: 24px
@@ -357,9 +365,13 @@ h2
     &:nth-child(3)
       padding: 17px 30px
 
+    &:nth-child(4)
+      display: none
+
     &:hover
       background-color: #0018ea
       color: #ffffff
+
 
 .destinations_main
   margin-top: 66px
@@ -688,11 +700,13 @@ h2
           .header_store_links
             margin-top: 40px
 
-          .check_in, .check_out
-            margin: 0 4px
+          .check_in
+            margin-right: 3px
+          .check_out
+            margin-left:  3px
 
           .header_form_destination input:focus + label, .header_form_people input:focus + label, .check_in:focus + label, .check_out:focus + label
-            transform: translateY(-15px)
+            transform: translateY(-12px)
             font-size: 12px
             padding: 0
             color: black
@@ -837,6 +851,7 @@ h2
 
   .header
     min-height: 533px
+    height: 100%
 
     .dark
       padding-top: 4px
@@ -845,66 +860,170 @@ h2
       .header_logo
         width: 121px
 
-      #night_theme
-        width: 16px !important
-        height: 16px
+      .header_nav_img
+        a
+         padding-left: 16px
+        .night_theme
+          width: 16px
+          height: 16px
+        .account_circle
+          width: 24px
+          height: 24px
 
+      .hamburger-menu
+        padding-left: 16px
 
       h1
-       margin-top: 40px
-       font-size: 36px
+       margin-top: 38px
+       font-size: 30px
+       line-height: 36px
 
-  .header_form
-    margin-top: 30px
-    flex-wrap: wrap
-    background-color: #F5BD41
+      .header_form
+        margin-top: 30px
+        padding: 4px
+        flex-wrap: wrap
+        background-color: #F5BD41
+        border-radius: 0
 
-    div
-      padding: 0
-      margin: 8px
+        div
+          padding: 4px
+        .header_form_destination
+          .loupe
+            display: inline
+            position: absolute
+            top: 40%
+            left: 24px
 
-  .loupe
-    display: inline
-    position: absolute
-    top: 40%
-    left: 24px
+        input
+            font-size: 15px
+            padding: 15px 40px
+            border-radius: 4px
+        label
+            font-size: 15px
+            left: 50px
+        button
+          font-size: 19px
+          padding: 15px 40px
+          border-radius: 4px
 
-  .header_form_destination
-    label
-      left: 50px
+      .header_store_links
+          margin-top: 32px
 
-  .header_store_links
-    margin-top: 40px
+  .offer
+    padding: 18px 0
 
-  h2
-    font-size: 28px
-    font-style: normal
-    font-weight: 700
+    h2
+      font-size: 28px
+      font-style: normal
+      font-weight: 700
 
-  .container
-    font-size: 15px
-    padding: 0 16px
+    .container
+      font-size: 15px
+      padding: 0 16px
 
-  .offer_main
-    flex-direction: column
-    align-items: center
+    .offer_main
+      margin-top: 0
+      margin-bottom: 20px
+      flex-direction: column
+      align-items: center
 
-    .offer_item
-      margin-top: 32px
+      .offer_item
+        margin-top: 24px
+        .offer_item_img
+          display: flex
+          justify-content: center
+        .offer_icon
+          width: 70%
 
-      .offer_item_text
-        margin-top: 16px
+        .offer_item_text
+          margin-top: 13px
+          font-size: 15px
+  .hotels
+    padding-top: 32px
 
-  .hotels_item:nth-child(3)
-    display: none
+    .hotels_main
+      margin-top: 25px
 
-  .btn-group
-    button
-      font-size: 18px
-      padding: 12px 25px
+      .hotel_item_name
+        margin-top: 6px
+        font-size: 12px
+
+      .hotel_item_place
+        margin-top: 2px
+        font-size: 12px
+
+      .hotels_item:nth-child(3)
+        display: none
+
+  .destinations
+    padding-top: 34px
+    .btn-group
+      margin-top: 23px
+
+      button
+        font-size: 19px
+        padding: 5px 15px
+
+        &:nth-child(3)
+          display: none
+        &:nth-child(4)
+          display: block
+
+    .destinations_main
+      margin-top: 26px
+      .destinations_item_name
+        margin-top: 7px
+        font-size: 12px
+
+    .rnd_btn_dest
+      display: none
 
   .item_dest:nth-child(3), .reviews_block:nth-child(2)
-    display: none
+   display: none
+
+  .reviews
+    margin-top: 0
+    padding: 30px 0
+
+    .main_reviews_block
+      margin-top: 30px
+
+      .reviews_block
+        margin: 0
+        min-height: 600px
+        .reviews_image_block
+          p
+            display: none
+        .reviews_content
+          padding: 0
+          .reviews_account
+            margin-top: 0
+          p,.reviews_text
+            font-size: 15px
+          .reviews_text
+            margin-top: 19px
+            line-height: 18px
+
+  .sign_up
+    padding: 24px 16px
+    .btm-section
+      padding: 0
+      .btn_close
+        margin: 0
+        svg
+          width: 16px
+      .sign_up_logo
+        margin: 0 16px
+        width: 58px
+      .install_link
+        a
+          font-size: 14px
+      .btm_block
+        padding: 0
+        .btm_text
+          font-size: 12px
+          line-height: 14px
+
 
   .footer
     padding: 40px 0
@@ -912,7 +1031,7 @@ h2
     .footer_logo
       display: block
       margin: 0 auto
-      height: 40px
+      height: 19px
       width: 205px
 
     .main_foot_block
@@ -920,9 +1039,17 @@ h2
       text-align: center
 
       .footer_text_block
+        padding: 0
+        li
+          a
+            font-size: 15px
+            line-height: 14px
+
         li:not(:first-child)
           display: none
 
-      .sign
+
+    .sign
+        font-size: 12px
         text-align: center
-        margin: 40px auto
+        margin: 6px auto
