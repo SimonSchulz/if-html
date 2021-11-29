@@ -44,10 +44,18 @@
 .header .dark .header_nav_img .night_theme {
   width: 30px;
   height: 30px;
+  fill: white;
+}
+.header .dark .header_nav_img .night_theme:hover {
+  fill: #F5BD41;
 }
 .header .dark .header_nav_img .account_circle {
   width: 40px;
   height: 40px;
+  fill: white;
+}
+.header .dark .header_nav_img .account_circle:hover {
+  fill: #F5BD41;
 }
 .header .dark .hamburger-menu {
   display: none;
@@ -90,12 +98,11 @@
   position: fixed;
   visibility: hidden;
   top: 0;
-  width: 200px;
+  width: 150px;
   margin: 0;
-  padding: 20px 0;
+  padding: 15px 0;
   list-style: none;
   text-align: center;
-  background: rgba(18, 18, 18, 0.2);
 }
 .header .dark .menu__item {
   display: block;
@@ -119,7 +126,7 @@
 .header .dark #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   right: 0;
-  top: 12%;
+  top: 5%;
 }
 .header .dark .header_nav_link {
   font-style: normal;
@@ -331,16 +338,12 @@ h2:hover::after {
   color: #BFBFBF;
 }
 .hotels .rnd_btn_hotel {
-  width: 40px;
-  height: 40px;
-  background: #eaf0f9;
-  border-radius: 50%;
   position: absolute;
-  top: 128px;
-  right: 0;
-  transform: translateX(50%);
+  background: none;
   border: none;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  right: 0;
+  top: 30%;
+  transform: translateX(30%);
 }
 
 .btn-group {
@@ -386,15 +389,21 @@ h2:hover::after {
 
 .rnd_btn_dest {
   margin-top: 48px;
-  width: 40px;
-  height: 40px;
-  background: #eaf0f9;
-  border-radius: 50%;
+  background: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   border: none;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rnd_btn_right {
+  display: none;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 0;
+  top: 35%;
+  transform: translateX(40%);
 }
 
 .sign_up {
@@ -785,16 +794,20 @@ h2:hover::after {
     margin-top: 40px;
   }
 
-  .hotels_item:last-child {
+  .hotels_item:nth-child(4) {
     display: none;
   }
 
-  .destinations_item_name, .hotel_item_name, .hotel_item_place {
+  .hotel_item_place, .hotel_item_name, .destinations_item_name {
     font-size: 18px;
   }
 
-  .item_dest:last-child {
+  .item_dest:nth-child(4) {
     display: none;
+  }
+
+  .rnd_btn_right {
+    display: block;
   }
 
   .reviews {
@@ -1019,7 +1032,7 @@ h2:hover::after {
     margin-top: 2px;
     font-size: 12px;
   }
-  .hotels .hotels_main .hotels_item:nth-child(3) {
+  .hotels .hotels_item:nth-child(3) {
     display: none;
   }
 
