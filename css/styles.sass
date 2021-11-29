@@ -378,9 +378,23 @@ h2
 
   .item_dest
     margin: 0 8px
-
-    img
-      max-width: 100%
+    .dest_wrapper
+      position: relative
+      img
+        max-width: 100%
+      button
+        opacity: 0.1
+        position: absolute
+        top: 42%
+        left: 29%
+        padding: 13px 24px
+        font-size: 18px
+        color: #3077C6
+        border: 1px solid #3077C6
+        border-radius: 8px
+    .dest_wrapper:hover
+      button
+        opacity: 1
 
 .rnd_btn_dest
   margin-top: 48px
@@ -428,7 +442,7 @@ h2
       justify-content: space-between
 
       .btm_text
-        font-weight: 700
+        font-weight: 500
         font-size: 24px
         color: #383838
 

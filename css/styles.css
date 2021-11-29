@@ -383,8 +383,25 @@ h2:hover::after {
 .destinations_main .item_dest {
   margin: 0 8px;
 }
-.destinations_main .item_dest img {
+.destinations_main .item_dest .dest_wrapper {
+  position: relative;
+}
+.destinations_main .item_dest .dest_wrapper img {
   max-width: 100%;
+}
+.destinations_main .item_dest .dest_wrapper button {
+  opacity: 0.1;
+  position: absolute;
+  top: 42%;
+  left: 29%;
+  padding: 13px 24px;
+  font-size: 18px;
+  color: #3077C6;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+}
+.destinations_main .item_dest .dest_wrapper:hover button {
+  opacity: 1;
 }
 
 .rnd_btn_dest {
@@ -436,7 +453,7 @@ h2:hover::after {
   justify-content: space-between;
 }
 .sign_up .btm-section .btm_block .btm_text {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 24px;
   color: #383838;
 }
